@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/closeNavMenu"
+            android:title="@string/closeMenu"
+            android:onClick="onCloseNavMenuClick"/>
+        <!--        app:actionProviderClass="androidx.mediarouter.app.MediaRouteActionProvider"-->
+
+    </group>
+
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/ordersInWork"
+                    android:title="@string/item1"
+                    android:onClick="onAddOrderClick"/>
+
+                <item
+                    android:id="@+id/addOrder"
+                    android:title="@string/item2"
+                    android:onClick="onOrdersInWorkClick"/>
+
+                <item
+                    android:id="@+id/archiveFiles"
+                    android:title="@string/item3"
+                    android:onClick="onArchiveFilesClick"/>
+
+            </group>
+</menu>
